@@ -175,6 +175,57 @@ select {
   font-size: 1rem;
 }
 
+.tempo {
+  width: 30%;
+}
+
+.tempo .tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #3a7edc;
+  border-radius: 1rem;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.tempo .tempo-slider:hover {
+  opacity: 1;
+}
+
+.tempo .tempo-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background: white;
+  cursor: pointer;
+}
+
+.tempo .tempo-slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background: white;
+  cursor: pointer;
+}
+
+.tempo p {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 @-webkit-keyframes playTrack {
   from {
     -webkit-transform: scale(1);
