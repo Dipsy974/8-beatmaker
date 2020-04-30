@@ -27,6 +27,7 @@ header {
       rgb(236, 185, 90),
       rgb(221, 97, 97)
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px white;
@@ -64,31 +65,37 @@ h1 {
 .kick-pad {
   background: url("../img/pad1off.png") #d0ae83 no-repeat;
   background-size: contain;
+  opacity: 0.5;
 }
 
 .kick-pad.active {
   background: url("../img/pad1on.png") #ffae55 no-repeat;
   background-size: contain;
+  opacity: 1;
 }
 
 .snare-pad {
   background: url("../img/pad2off.png") #d07fb2 no-repeat;
   background-size: contain;
+  opacity: 0.5;
 }
 
 .snare-pad.active {
   background: url("../img/pad2on.png") #ff55ae no-repeat;
   background-size: contain;
+  opacity: 1;
 }
 
 .hihat-pad {
   background: url("../img/pad3off.png") #7688dd no-repeat;
   background-size: contain;
+  opacity: 0.5;
 }
 
 .hihat-pad.active {
   background: url("../img/pad3on.png") #5567ff no-repeat;
   background-size: contain;
+  opacity: 1;
 }
 
 .hihat-track,
@@ -123,4 +130,13 @@ h1 {
 select {
   padding: 0.6rem 1rem;
   font-size: 1rem;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
