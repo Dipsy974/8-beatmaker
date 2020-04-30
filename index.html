@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./img/icon.png" />
     <title>8-Beatmaker</title>
   </head>
   <body>
@@ -20,13 +21,9 @@
         <div class="kick-track">
           <div class="controls">
             <h1>Kick</h1>
-            <img
-              src="./img/soundoff.png"
-              alt="soundoff"
-              data-track="0"
-              class="mute kick-volume"
-            />
-            <select name="kick-select" id="kick-select" disabled>
+
+            <button data-track="0" class="mute kick-volume"></button>
+            <select name="kick-select" id="kick-select">
               <option value="./sounds/kick1.wav">Kick 1</option>
               <option value="./sounds/kick2.wav">Kick 2</option>
               <option value="./sounds/kick3.wav">Kick 3</option>
@@ -47,13 +44,8 @@
         <div class="snare-track">
           <div class="controls">
             <h1>Snare</h1>
-            <img
-              src="./img/soundoff.png"
-              alt="soundoff"
-              data-track="1"
-              class="mute snare-volume"
-            />
-            <select name="snare-select" id="snare-select" disabled>
+            <button data-track="1" class="mute kick-volume"></button>
+            <select name="snare-select" id="snare-select">
               <option value="./sounds/snare1.wav">Snare 1</option>
               <option value="./sounds/snare2.wav">Snare 2</option>
               <option value="./sounds/snare3.wav">Snare 3</option>
@@ -74,13 +66,8 @@
         <div class="hihat-track">
           <div class="controls">
             <h1>Hihat</h1>
-            <img
-              src="./img/soundoff.png"
-              alt="soundoff"
-              data-track="2"
-              class="mute hihat-volume"
-            />
-            <select name="hihat-select" id="hihat-select" disabled>
+            <button data-track="2" class="mute kick-volume"></button>
+            <select name="hihat-select" id="hihat-select">
               <option value="./sounds/hihat1.wav">Hihat 1</option>
               <option value="./sounds/hihat2.wav">Hihat 2</option>
               <option value="./sounds/hihat3.wav">Hihat 3</option>
@@ -101,7 +88,7 @@
       </div>
 
       <audio src="./sounds/kick1.wav" class="kick-sound"></audio>
-      <audio src="./sounds/snare2.wav" class="snare-sound"></audio>
+      <audio src="./sounds/snare1.wav" class="snare-sound"></audio>
       <audio src="./sounds/hihat1.wav" class="hihat-sound"></audio>
     </section>
     <script src="./apps/app.js"></script>
